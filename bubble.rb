@@ -5,9 +5,7 @@ def bubble_sort(array)
         swap = false
         array.each_with_index do 
             |number, idx|
-            if array[idx + 1] == nil
-                next
-            elsif idx == array.length - 1 - iteration
+            if array[idx + 1] == nil || idx == array.length - 1 - iteration
                 next
             elsif array[idx] > array[idx + 1]
                 hold = array[idx + 1]
